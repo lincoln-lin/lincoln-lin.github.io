@@ -1,0 +1,335 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  
+    <title>Lincoln Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="Lincoln">
+    
+    <meta name="description" content="golang php">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Lincoln Blog" title="Lincoln Blog"></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Lincoln Blog">Lincoln Blog</a></h1>
+				<h2 class="blog-motto">小白程序员</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索">
+						<input type="hidden" name="q" value="site:yqin.vip">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main">
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/12/10/mysql/" title="Mysql 事务隔离级别" itemprop="url">
+  
+    <h1 itemprop="name">Mysql 事务隔离级别</h1>
+    
+     
+           <p itemprop="description">Mysql 事务隔离级别SQL规范了4个事务隔离级别,从低到高分别如下:
+1,Read Uncommitted ,读未提交事务已执行但未提交,此时可以读到未提交的数据,所以有可能脏读
+2 ,Read Committed ,读已提交已执行但未提交的数据不会被读取,只能读取到已提交的</p>
+        
+    
+    <time datetime="2018-12-10T08:30:43.000Z" itemprop="datePublished">2018-12-10</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/11/29/go-micro-kafka/" title="go-micro 与 kafka 实现消息队列" itemprop="url">
+  
+    <h1 itemprop="name">go-micro 与 kafka 实现消息队列</h1>
+    
+     
+           <p itemprop="description">go-micro 与 kafka 实现消息队列go-micro 作为一个微服务框架，很容易结合 kafka 实现消息队列。
+1，安装并配置zookeeper12brew install zookeeperzkServer start
+2， 安装并配置kafka1234brew i</p>
+        
+    
+    <time datetime="2018-11-29T07:48:40.000Z" itemprop="datePublished">2018-11-29</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/11/28/go-micro-ratelimit/" title="go-micro 实现微服务限流器功能" itemprop="url">
+  
+    <h1 itemprop="name">go-micro 实现微服务限流器功能</h1>
+    
+     
+           <p itemprop="description">go-micro 与 juju/ratelimit 实现微服务限流器功能12先安装 juju/ratelimit：go get github.com/juju/ratelimi
+在 go-micro 里面实现限流器功能非常简单,既可以在客户端也可以在服务端实现，这里我们选择在服务</p>
+        
+    
+    <time datetime="2018-11-28T07:57:02.000Z" itemprop="datePublished">2018-11-28</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/11/27/redis-db/" title="Redis 与 Mysql 保持一至性" itemprop="url">
+  
+    <h1 itemprop="name">Redis 与 Mysql 保持一至性</h1>
+    
+     
+      <p itemprop="description">Redis 与 Mysql 保持一至性的一般做法</p>
+      
+    
+    <time datetime="2018-11-27T08:30:43.000Z" itemprop="datePublished">2018-11-27</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/11/26/redis-lock/" title="Redis 分布式锁" itemprop="url">
+  
+    <h1 itemprop="name">Redis 分布式锁</h1>
+    
+     
+           <p itemprop="description">Redis 分布式锁的实现 （2.6.12 版本之前）在魅族服务很多地方都需要用到分布式锁，我们一般使用redis来实现，在 2.61版本之前，我们一般使用SETNX、GETSET、毫秒时间戳 来实现，用 Golang 代码实现如下：12345678910111213141516</p>
+        
+    
+    <time datetime="2018-11-26T04:15:35.000Z" itemprop="datePublished">2018-11-26</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/01/28/hystrix/" title="go-micro 实现服务熔断与服务降级" itemprop="url">
+  
+    <h1 itemprop="name">go-micro 实现服务熔断与服务降级</h1>
+    
+     
+           <p itemprop="description">服务熔断与服务降级魅族服务的下单服务在上游，下单过程中需要调用flyme的部分服务，此时flyme的服务不可用或接口错误，导致每个请求都是timeout才返回，原本2ms就能完成的业务，现在要3s才能完成（假设timeout时间是3s），为了保护我们自己的魅族服务，采用熔断，并降</p>
+        
+    
+    <time datetime="2018-01-28T08:08:48.000Z" itemprop="datePublished">2018-01-28</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2018/01/27/go-micro-discovery/" title="go-micro 使用 consul 、 etcd 、k8s 等作为服务发现" itemprop="url">
+  
+    <h1 itemprop="name">go-micro 使用 consul 、 etcd 、k8s 等作为服务发现</h1>
+    
+     
+           <p itemprop="description">go-micro 使用 consul 作服务发现go-micro 默认使用 consul 作服务发现,所以不用修改代码,直接在服务启动时添加consul服务器即可 :12go run main.go --registry_address 172.16.196.132:8500
+当</p>
+        
+    
+    <time datetime="2018-01-27T07:40:34.000Z" itemprop="datePublished">2018-01-27</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2017/11/28/nginx/" title="Linux下Nginx与php-fpm的优化配置" itemprop="url">
+  
+    <h1 itemprop="name">Linux下Nginx与php-fpm的优化配置</h1>
+    
+     
+           <p itemprop="description">linux下nginx与php-fpm的优化配置前段时间魅族服务在访问高峰期出现概率性502服务器错误，10%的概率出现502，出现在新的服务器上，旧服务器没问题。问题出现在新服务器Linux文件句柄限制上，默认是1024，改为65535即可。以下为服务器常见配置：
+linux文</p>
+        
+    
+    <time datetime="2017-11-28T08:26:52.000Z" itemprop="datePublished">2017-11-28</time>
+  </a>
+</section>
+
+  <section class="post" itemscope="" itemprop="blogPost">
+  
+    <a href="/2017/11/28/ssh-key/" title="Window 、 Linux 下 Git - 生成 SSH 公钥" itemprop="url">
+  
+    <h1 itemprop="name">Window 、 Linux 下 Git - 生成 SSH 公钥</h1>
+    
+     
+      <p itemprop="description">先查看是否已经生成好SSH公钥</p>
+      
+    
+    <time datetime="2017-11-28T08:26:52.000Z" itemprop="datePublished">2017-11-28</time>
+  </a>
+</section>
+
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Git/" title="Git">Git<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Go微服务/" title="Go微服务">Go微服务<sup>4</sup></a></li>
+		
+			<li><a href="/tags/Mysql/" title="Mysql">Mysql<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Redis/" title="Redis">Redis<sup>2</sup></a></li>
+		
+			<li><a href="/tags/SSH/" title="SSH">SSH<sup>1</sup></a></li>
+		
+			<li><a href="/tags/consul/" title="consul">consul<sup>1</sup></a></li>
+		
+			<li><a href="/tags/etcd/" title="etcd">etcd<sup>1</sup></a></li>
+		
+			<li><a href="/tags/go-micro/" title="go-micro">go-micro<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hystrix/" title="hystrix">hystrix<sup>1</sup></a></li>
+		
+			<li><a href="/tags/juju-ratelimit/" title="juju/ratelimit">juju/ratelimit<sup>1</sup></a></li>
+		
+			<li><a href="/tags/kafka/" title="kafka">kafka<sup>2</sup></a></li>
+		
+			<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
+		
+			<li><a href="/tags/一至性/" title="一至性">一至性<sup>1</sup></a></li>
+		
+			<li><a href="/tags/事务隔离级别/" title="事务隔离级别">事务隔离级别<sup>1</sup></a></li>
+		
+			<li><a href="/tags/分布式锁/" title="分布式锁">分布式锁<sup>1</sup></a></li>
+		
+			<li><a href="/tags/服务发现/" title="服务发现">服务发现<sup>1</sup></a></li>
+		
+			<li><a href="/tags/服务熔断/" title="服务熔断">服务熔断<sup>1</sup></a></li>
+		
+			<li><a href="/tags/限流器/" title="限流器">限流器<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2019 
+		
+		<a href="http://yqin.vip" target="_blank" title="Lincoln">Lincoln</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+
+
+
+  </body>
+ </html>
