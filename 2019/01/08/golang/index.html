@@ -4,14 +4,12 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
   
-    <title>Mysql 事务隔离级别 | Lincoln Blog</title>
+    <title>golang | Lincoln Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Lincoln">
     
-    <meta name="description" content="Mysql 事务隔离级别SQL规范了4个事务隔离级别,从低到高分别如下:
-1,Read Uncommitted ,读未提交事务已执行但未提交,此时可以读到未提交的数据,所以有可能脏读
-2 ,Read Committed ,读已提交已执行但未提交的数据不会被读取,只能读取到已提交的数据,所以可能会出现">
+    <meta name="description" content="">
     
     
     
@@ -67,15 +65,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/12/10/mysql/" title="Mysql 事务隔离级别" itemprop="url">Mysql 事务隔离级别</a>
+      <a href="/2019/01/08/golang/" title="golang" itemprop="url">golang</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yqin.vip" title="Lincoln">Lincoln</a>
     </p>
   <p class="article-time">
-    <time datetime="2018-12-10T08:30:43.000Z" itemprop="datePublished">2018-12-10</time>
-    更新日期:<time datetime="2019-01-08T08:34:26.587Z" itemprop="dateModified">2019-01-08</time>
+    <time datetime="2019-01-08T09:58:15.000Z" itemprop="datePublished">2019-01-08</time>
+    更新日期:<time datetime="2019-01-08T10:07:36.637Z" itemprop="dateModified">2019-01-08</time>
     
   </p>
 </header>
@@ -84,29 +82,19 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mysql-事务隔离级别"><span class="toc-number">1.</span> <span class="toc-text">Mysql 事务隔离级别</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Read-Uncommitted-读未提交"><span class="toc-number">1.0.1.</span> <span class="toc-text">1,Read Uncommitted ,读未提交</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Read-Committed-读已提交"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 ,Read Committed ,读已提交</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-Repeatable-Read-可重复读"><span class="toc-number">1.0.3.</span> <span class="toc-text">3,Repeatable Read ,可重复读</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-Serializable-串行化"><span class="toc-number">1.0.4.</span> <span class="toc-text">4,Serializable, 串行化</span></a></li></ol></li></ol>
+		
 		</div>
 		
-		<h3 id="Mysql-事务隔离级别"><a href="#Mysql-事务隔离级别" class="headerlink" title="Mysql 事务隔离级别"></a>Mysql 事务隔离级别</h3><p>SQL规范了4个事务隔离级别,从低到高分别如下:</p>
-<h5 id="1-Read-Uncommitted-读未提交"><a href="#1-Read-Uncommitted-读未提交" class="headerlink" title="1,Read Uncommitted ,读未提交"></a>1,Read Uncommitted ,读未提交</h5><p>事务已执行但未提交,此时可以读到未提交的数据,所以有可能脏读</p>
-<h5 id="2-Read-Committed-读已提交"><a href="#2-Read-Committed-读已提交" class="headerlink" title="2 ,Read Committed ,读已提交"></a>2 ,Read Committed ,读已提交</h5><p>已执行但未提交的数据不会被读取,只能读取到已提交的数据,所以可能会出现在同一个事务中,前后两次select的结果不一致,即出现不可重复读的问题</p>
-<h5 id="3-Repeatable-Read-可重复读"><a href="#3-Repeatable-Read-可重复读" class="headerlink" title="3,Repeatable Read ,可重复读"></a>3,Repeatable Read ,可重复读</h5><p>可重复读,即同一个事务中,select的结果以事务开始的时间点状态为准,只能读到此时间点之前的数据.所以可以保证同一个select的结果是一样的,解决了不可重复读的问题,但不能解决幻读,因为只解决同一个事务中的select一致性,但不保证不同事务并行所产生的数据覆盖问题,即幻读,除非事务不同时并发,而是串行化</p>
-<h5 id="4-Serializable-串行化"><a href="#4-Serializable-串行化" class="headerlink" title="4,Serializable, 串行化"></a>4,Serializable, 串行化</h5><p>事务不能并发,只能按顺序执行.</p>
-  
+		<iframe src="https://docs.google.com/presentation/d/11IUp8tyfbuu5e3il6dpRwsZ_fGBfJ_2aqpodAEdf5wU/edit?usp=sharing" width="700px" height="500px" frameborder="0" scrolling="no"></iframe>  
 	</div>
 		<footer class="article-footer clearfix">
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/mysql/">mysql</a><a href="/tags/事务隔离级别/">事务隔离级别</a>
-  </div>
 
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yqin.vip/2018/12/10/mysql/" data-title="Mysql 事务隔离级别 | Lincoln Blog" data-tsina="" class="share clearfix">
+  <div data-url="http://yqin.vip/2019/01/08/golang/" data-title="golang | Lincoln Blog" data-tsina="" class="share clearfix">
   </div>
 
 </div>
@@ -115,19 +103,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev">
- <a href="/2019/01/08/golang/" title="golang">
-  <strong>PREVIOUS:</strong><br>
-  <span>
-  golang</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2018/11/29/go-micro-kafka/" title="go-micro 与 kafka 实现消息队列">
+<a href="/2018/12/10/mysql/" title="Mysql 事务隔离级别">
  <strong>NEXT:</strong><br> 
- <span>go-micro 与 kafka 实现消息队列
+ <span>Mysql 事务隔离级别
 </span>
 </a>
 </div>
@@ -140,7 +120,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mysql-事务隔离级别"><span class="toc-number">1.</span> <span class="toc-text">Mysql 事务隔离级别</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Read-Uncommitted-读未提交"><span class="toc-number">1.0.1.</span> <span class="toc-text">1,Read Uncommitted ,读未提交</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Read-Committed-读已提交"><span class="toc-number">1.0.2.</span> <span class="toc-text">2 ,Read Committed ,读已提交</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-Repeatable-Read-可重复读"><span class="toc-number">1.0.3.</span> <span class="toc-text">3,Repeatable Read ,可重复读</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-Serializable-串行化"><span class="toc-number">1.0.4.</span> <span class="toc-text">4,Serializable, 串行化</span></a></li></ol></li></ol>
+  
   </div>
 
 <div id="asidepart">
